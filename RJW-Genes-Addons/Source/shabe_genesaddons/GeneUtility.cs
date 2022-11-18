@@ -11,11 +11,19 @@ namespace shabe_genesaddons
     {
         public static bool IsMechbreeder(Pawn pawn)
         {
+            if (pawn.genes == null)
+            {
+                return false;
+            }
             return pawn.genes.HasGene(GeneDefOf.rjw_genes_mechbreeder);
         }
 
         public static bool IsInsectIncubator(Pawn pawn)
         {
+            if (pawn.genes == null)
+            {
+                return false;
+            }
             return pawn.genes.HasGene(GeneDefOf.rjw_genes_insectincubator);
         }
 
