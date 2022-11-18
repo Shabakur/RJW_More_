@@ -13,5 +13,6 @@ namespace shabe_genesaddons
     {
         public static readonly GeneDef rjw_genes_mechbreeder;
         public static readonly GeneDef rjw_genes_insectincubator;
+        public static readonly GeneDef rjw_genes_insectbreeder;
     }
 }

@@ -27,6 +27,15 @@ namespace shabe_genesaddons
             return pawn.genes.HasGene(GeneDefOf.rjw_genes_insectincubator);
         }
 
+        public static bool isInsectBreeder(Pawn pawn)
+        {
+            if (pawn.genes == null)
+            {
+                return false;
+            }
+            return pawn.genes.HasGene(GeneDefOf.rjw_genes_insectbreeder);
+        }
+
         public static float MaxEggSizeMul(Pawn pawn)
         {
             float MaxEggSize = 1;
