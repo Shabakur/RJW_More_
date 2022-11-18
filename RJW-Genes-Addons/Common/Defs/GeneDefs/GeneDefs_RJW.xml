@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <!-- Mechbreeder -->
+  <GeneDef>
+    <defName>rjw_genes_mechbreeder</defName>
+    <label>Mechbreeder</label>
+    <description>Pawns with this gene are able to birth mechanoids unharmed.</description>
+    <iconPath>World/WorldObjects/Expanding/Mechanoids</iconPath>
+    <displayOrderInCategory>51</displayOrderInCategory>
+	<displayCategory>Reproduction</displayCategory>
+  </GeneDef>
+  
+  <GeneDef>
+    <defName>rjw_genes_insectincubator</defName>
+    <label>InsectIncubator</label>	
+    <description>Pawns with this gene are able to hold more insect eggs.</description>
+    <iconPath>World/WorldObjects/Expanding/Mechanoids</iconPath>
+    <displayOrderInCategory>52</displayOrderInCategory>
+	<displayCategory>Reproduction</displayCategory>
+  </GeneDef>
+</Defs>
