@@ -36,6 +36,15 @@ namespace shabe_genesaddons
             return pawn.genes.HasGene(GeneDefOf.rjw_genes_insectbreeder);
         }
 
+        public static bool isPussyHealer(Pawn pawn)
+        {
+            if (pawn.genes == null)
+            {
+                return false;
+            }
+            return pawn.genes.HasGene(GeneDefOf.rjw_genes_pussyhealer);
+        }
+
         public static float MaxEggSizeMul(Pawn pawn)
         {
             float MaxEggSize = 1;

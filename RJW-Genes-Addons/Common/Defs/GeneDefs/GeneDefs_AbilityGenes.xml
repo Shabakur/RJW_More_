@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <!-- Mechbreeder -->
+  <GeneDef>
+    <defName>rjw_genes_mechbreeder</defName>
+    <label>Mechbreeder</label>
+    <description>Pawns with this gene are able to birth mechanoids unharmed.</description>
+    <iconPath>World/WorldObjects/Expanding/Mechanoids</iconPath>
+    <displayOrderInCategory>51</displayOrderInCategory>
+	<displayCategory>Reproduction</displayCategory>
+  </GeneDef>
+  
+  <GeneDef>
+    <defName>rjw_genes_pussyhealer</defName>
+    <label>Pussy Healer</label>
+    <labelShortAdj>pussyhealer</labelShortAdj>
+    <description>Carriers of this gene are able use vaginal sex to tend to others wounds.</description>
+    <iconPath>UI/Icons/Genes/Gene_Coagulate</iconPath>
+    <displayCategory>Ability</displayCategory>
+    <abilities>
+      <li>Coagulate</li>
+    </abilities>
+    <descriptionHyperlinks>
+      <AbilityDef>Coagulate</AbilityDef>
+    </descriptionHyperlinks>
+    <biostatMet>-1</biostatMet>
+    <minAgeActive>3</minAgeActive>
+    <symbolPack>
+      <suffixSymbols>
+        <li><symbol>life</symbol></li>
+        <li><symbol>clotter</symbol></li>
+        <li><symbol>tender</symbol></li>
+      </suffixSymbols>
+    </symbolPack>
+  </GeneDef>
+</Defs>
