@@ -57,6 +57,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CompAbilityEffect_PussyHeal.cs" />
+    <Compile Include="CompProperties_AbilityPussyHeal.cs" />
     <Compile Include="GeneDefOf.cs" />
     <Compile Include="HarmonyInit.cs" />
     <Compile Include="PatchMechBirth.cs" />
