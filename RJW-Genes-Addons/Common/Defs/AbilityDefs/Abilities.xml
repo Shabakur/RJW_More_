@@ -27,7 +27,7 @@
       </targetParams>
     </verbProperties>
     <comps>
-      <li Class="CompProperties_AbilityCoagulate">
+      <li Class="shabe_genesaddons.CompProperties_AbilityPussyHeal"> <!-- needs to be changed when copied to another mod-->
         <tendQualityRange>0.4~0.8</tendQualityRange>
       </li>
       <li Class="CompProperties_AbilityRequiresCapacity">

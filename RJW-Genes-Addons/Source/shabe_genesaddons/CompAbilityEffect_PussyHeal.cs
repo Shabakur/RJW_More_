@@ -6,16 +6,17 @@ using System.Threading.Tasks;
 using Verse;
 using UnityEngine;
 using RimWorld;
+using rjw;
 
 namespace shabe_genesaddons
 {
     public class CompAbilityEffect_PussyHeal : CompAbilityEffect
     {
-		private new CompProperties_AbilityCoagulate Props
+		private new CompProperties_AbilityPussyHeal Props
 		{
 			get
 			{
-				return (CompProperties_AbilityCoagulate)this.props;
+				return (CompProperties_AbilityPussyHeal)this.props;
 			}
 		}
 		public override void Apply(LocalTargetInfo target, LocalTargetInfo dest)
@@ -45,10 +46,20 @@ namespace shabe_genesaddons
 
 		public override bool Valid(LocalTargetInfo target, bool throwMessages = false)
         {
-            Pawn pawn = target.Pawn;
+			Pawn pawn = target.Pawn;
             if (pawn != null)
             {
-                AbilityUtility.ValidateHasTendableWound(pawn, throwMessages, this.parent);
+				//to be replaced with severel checks to make it clear why target is unable to have sex
+				if (!CasualSex_Helper.CanHaveSex(pawn))
+				{
+					if (throwMessages)
+					{
+						Messages.Message(pawn.Name + " is unable to have sex", pawn, MessageTypeDefOf.RejectInput, false);
+					}
+					return false;
+				}
+				AbilityUtility.ValidateHasTendableWound(pawn, throwMessages, this.parent);
+				
             }
             return base.Valid(target, throwMessages);
         }
