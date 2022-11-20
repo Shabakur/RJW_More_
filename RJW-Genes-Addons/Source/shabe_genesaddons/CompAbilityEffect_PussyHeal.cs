@@ -7,6 +7,7 @@ using Verse;
 using UnityEngine;
 using RimWorld;
 using rjw;
+using rjw.Modules.Interactions.Helpers;
 
 namespace shabe_genesaddons
 {
@@ -41,7 +42,24 @@ namespace shabe_genesaddons
 			{
 				MoteMaker.ThrowText(pawn.DrawPos, pawn.Map, "NumWoundsTended".Translate(num), 3.65f);
 			}
-			FleckMaker.AttachedOverlay(pawn, FleckDefOf.FlashHollow, Vector3.zero, 1.5f, -1f);
+			this.AfterSex(this.parent.pawn, pawn);
+			//FleckMaker.AttachedOverlay(pawn, FleckDefOf.FlashHollow, Vector3.zero, 1.5f, -1f);
+		}
+
+		public void AfterSex(Pawn pawn, Pawn target)
+        {
+			List<Hediff> hediffs = target.health.hediffSet.hediffs;
+			for (int i = 0; i < hediffs.Count; i++)
+			{
+				if ((hediffs[i] is Hediff_Injury || hediffs[i] is Hediff_MissingPart) && hediffs[i].TendableNow(false))
+				{
+					target.needs.mood.thoughts.memories.TryGainMemory(ThoughtDefOf.Pussy_Healed, pawn, null);
+					break;
+				}
+			}
+			//InteractionHelper.GetWithExtension(dictionaryKey).DominantHasTag("CanBePenetrated")
+
+
 		}
 
 		public override bool Valid(LocalTargetInfo target, bool throwMessages = false)
@@ -49,12 +67,23 @@ namespace shabe_genesaddons
 			Pawn pawn = target.Pawn;
             if (pawn != null)
             {
+				
+
 				//to be replaced with severel checks to make it clear why target is unable to have sex
 				if (!CasualSex_Helper.CanHaveSex(pawn))
 				{
 					if (throwMessages)
 					{
 						Messages.Message(pawn.Name + " is unable to have sex", pawn, MessageTypeDefOf.RejectInput, false);
+					}
+					return false;
+				}
+				Pawn parent = this.parent.pawn;
+				if (parent == null || !Genital_Helper.has_vagina(parent))
+				{
+					if (throwMessages && parent != null)
+					{
+						Messages.Message(parent.Name + " has no vagina to use", pawn, MessageTypeDefOf.RejectInput, false);
 					}
 					return false;
 				}

@@ -11,13 +11,13 @@
     <warmupMote>Mote_CoagulateStencil</warmupMote>
     <warmupEffecter>Coagulate</warmupEffecter>
     <warmupStartSound>Coagulate_Cast</warmupStartSound>
-    <jobDef>CastAbilityOnThingMelee</jobDef>
+    <jobDef>HealPussy</jobDef>
     <displayOrder>401</displayOrder>
     <verbProperties>
       <verbClass>Verb_CastAbilityTouch</verbClass>
       <drawAimPie>false</drawAimPie>
       <range>-1</range>
-      <warmupTime>1</warmupTime>
+      <warmupTime>0</warmupTime>
       <targetParams>
         <canTargetAnimals>false</canTargetAnimals>
         <canTargetSelf>false</canTargetSelf>
@@ -27,12 +27,23 @@
       </targetParams>
     </verbProperties>
     <comps>
-      <li Class="shabe_genesaddons.CompProperties_AbilityPussyHeal"> <!-- needs to be changed when copied to another mod-->
-        <tendQualityRange>0.4~0.8</tendQualityRange>
+      <li Class="shabe_genesaddons.CompProperties_AbilityPussyHeal"> <!-- namespace needs to be changed when copied to another mod-->
+        <tendQualityRange>0.4~0.8</tendQualityRange> 
       </li>
       <li Class="CompProperties_AbilityRequiresCapacity">
         <capacity>Manipulation</capacity>
       </li>
+	  <li Class="shabe_genesaddons.CompProperties_SexInteractionRequirements"> 
+		<tags>
+			<li>Consensual</li>
+			<li>Rape</li>
+		</tags>
+		<dominantRequirement>
+			<families>
+				<li>Vagina</li>
+			</families>
+		</dominantRequirement> 
+	  </li> 
     </comps>
   </AbilityDef>
 </Defs>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+	<ThoughtDef>
+		<defName>Pussy_Healed</defName>
+		<thoughtClass>Thought_Memory</thoughtClass>
+		<durationDays>3.0</durationDays>
+		<stackLimit>1</stackLimit>
+		<stages>
+			<li>
+				<label>Healed with sex</label>
+				<description>Someone tended to my wound through having sex.</description>
+				<baseMoodEffect>5</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+</Defs>
