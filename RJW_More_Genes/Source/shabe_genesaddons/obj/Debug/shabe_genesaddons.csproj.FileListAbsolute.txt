@@ -1,0 +1,8 @@
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\RJW-Genes-Addons\Common\Assemblies\shabe_genesaddons.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\RJW-Genes-Addons\Source\shabe_genesaddons\obj\Debug\shabe_genesaddons.csproj.AssemblyReference.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\RJW-Genes-Addons\Source\shabe_genesaddons\obj\Debug\shabe_genesaddons.csproj.CoreCompileInputs.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\RJW-Genes-Addons\Source\shabe_genesaddons\obj\Debug\shabe_genesaddons.dll
+C:\Users\tyrob\OneDrive\Documenten\GitHub\RJW_Genes_Addons\RJW-Genes-Addons\Common\Assemblies\shabe_genesaddons.dll
+C:\Users\tyrob\OneDrive\Documenten\GitHub\RJW_Genes_Addons\RJW-Genes-Addons\Source\shabe_genesaddons\obj\Debug\shabe_genesaddons.csproj.AssemblyReference.cache
+C:\Users\tyrob\OneDrive\Documenten\GitHub\RJW_Genes_Addons\RJW-Genes-Addons\Source\shabe_genesaddons\obj\Debug\shabe_genesaddons.csproj.CoreCompileInputs.cache
+C:\Users\tyrob\OneDrive\Documenten\GitHub\RJW_Genes_Addons\RJW-Genes-Addons\Source\shabe_genesaddons\obj\Debug\shabe_genesaddons.dll
