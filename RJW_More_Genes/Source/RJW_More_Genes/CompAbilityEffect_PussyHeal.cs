@@ -9,7 +9,7 @@ using RimWorld;
 using rjw;
 using rjw.Modules.Interactions.Helpers;
 
-namespace shabe_genesaddons
+namespace RJW_More_Genes
 {
     public class CompAbilityEffect_PussyHeal : CompAbilityEffect
     {

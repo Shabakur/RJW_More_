@@ -13,7 +13,7 @@ using rjw.Modules.Interactions.Implementation;
 using rjw.Modules.Interactions.Defs.DefFragment;
 //using rjw.Modules.Interactions.Enums;
 
-namespace shabe_genesaddons
+namespace RJW_More_Genes
 {
     class SexInteractionUtility
     {

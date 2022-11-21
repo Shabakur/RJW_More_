@@ -7,14 +7,14 @@ using Verse;
 using HarmonyLib;
 
 
-namespace shabe_genesaddons
+namespace RJW_More_Genes
 {
     [StaticConstructorOnStartup]
     internal static class HarmonyInit
     {
         static HarmonyInit()
         {
-            Harmony harmony = new Harmony("shabe_genesaddons");
+            Harmony harmony = new Harmony("RJW_More_Genes");
             harmony.PatchAll();
         }
     }

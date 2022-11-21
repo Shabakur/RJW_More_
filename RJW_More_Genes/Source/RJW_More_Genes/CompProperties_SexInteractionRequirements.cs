@@ -8,7 +8,8 @@ using RimWorld;
 using rjw;
 using rjw.Modules.Interactions.Defs.DefFragment;
 using rjw.Modules.Interactions.Enums;
-namespace shabe_genesaddons
+
+namespace RJW_More_Genes
 {
     public class CompProperties_SexInteractionRequirements  : AbilityCompProperties
     {

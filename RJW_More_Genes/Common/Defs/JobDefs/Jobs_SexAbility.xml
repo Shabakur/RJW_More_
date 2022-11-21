@@ -3,7 +3,7 @@
 <Defs>
 	<JobDef>
 		<defName>HealPussy</defName>
-		<driverClass>shabe_genesaddons.JobDriver_CastAbilityAfterSex</driverClass>
+		<driverClass>RJW_More_Genes.JobDriver_CastAbilityAfterSex</driverClass>
 		<reportString>Healing someone with sex.</reportString>
 		<casualInterruptible>false</casualInterruptible>
 	</JobDef>

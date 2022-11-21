@@ -8,7 +8,7 @@ using Verse;
 using Verse.AI;
 using rjw;
 
-namespace shabe_genesaddons
+namespace RJW_More_Genes
 {
     public class JobDriver_CastAbilityAfterSex : JobDriver_SexBaseInitiator
 	{

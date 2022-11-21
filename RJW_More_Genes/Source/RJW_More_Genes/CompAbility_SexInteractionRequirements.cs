@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Verse;
 using RimWorld;
-namespace shabe_genesaddons
+namespace RJW_More_Genes
 {
     public class CompAbility_SexInteractionRequirements : AbilityComp
 	{

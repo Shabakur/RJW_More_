@@ -8,6 +8,7 @@
     <stunTargetWhileCasting>false</stunTargetWhileCasting>
     <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
     <disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
+	<cooldownTicksRange>60000</cooldownTicksRange>
     <warmupMote>Mote_CoagulateStencil</warmupMote>
     <warmupEffecter>Coagulate</warmupEffecter>
     <warmupStartSound>Coagulate_Cast</warmupStartSound>
@@ -27,15 +28,15 @@
       </targetParams>
     </verbProperties>
     <comps>
-      <li Class="shabe_genesaddons.CompProperties_AbilityPussyHeal"> <!-- namespace needs to be changed when copied to another mod-->
+      <li Class="RJW_More_Genes.CompProperties_AbilityPussyHeal"> <!-- namespace needs to be changed when copied to another mod-->
         <tendQualityRange>0.4~0.8</tendQualityRange> 
       </li>
       <li Class="CompProperties_AbilityRequiresCapacity">
         <capacity>Manipulation</capacity>
       </li>
-	  <li Class="shabe_genesaddons.CompProperties_SexInteractionRequirements"> 
+	  <li Class="RJW_More_Genes.CompProperties_SexInteractionRequirements"> 
 		<tags>
-			<li>Consensual</li>
+			<!-- <li>Consensual</li> -->
 			<li>Rape</li>
 		</tags>
 		<dominantRequirement>

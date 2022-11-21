@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using Verse;
 using RimWorld;
 
-namespace shabe_genesaddons
+namespace RJW_More_Genes
 {
 	public class CompProperties_AbilityPussyHeal : CompProperties_AbilityEffect
 	{
