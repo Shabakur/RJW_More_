@@ -2,3 +2,9 @@ V1.0 Made Changelog, currently have insectincubator and mechbreeder genes
 V1.0.1 Fixed some null errors in geneutility
 V1.0.2 Added insectbreeder gene
 V1.0.3 Added Healpussy Gene
+V1.0.4 Changed Name and Removed Genes which were copied to rjw_genes
+V1.0.5
+- Allowed Healpussy to work on animals
+V1.0.6
+- Allowed Healpussy to work passively
+- Added checks for RJWsettings and if the pawn has a vagina.

@@ -28,21 +28,13 @@ namespace RJW_More_Genes
 			{
 				return;
 			}
-			int num = 0;
-			List<Hediff> hediffs = pawn.health.hediffSet.hediffs;
-			for (int i = hediffs.Count - 1; i >= 0; i--)
+			bool any_wound_tended = AbilityUtility.Heal(pawn, this.Props.tendQualityRange);
+			if (any_wound_tended)
 			{
-				if ((hediffs[i] is Hediff_Injury || hediffs[i] is Hediff_MissingPart) && hediffs[i].TendableNow(false))
-				{
-					hediffs[i].Tended(this.Props.tendQualityRange.RandomInRange, this.Props.tendQualityRange.TrueMax, 1);
-					num++;
-				}
+				MoteMaker.ThrowText(pawn.DrawPos, pawn.Map, "Sex Healed Wounds", 3.65f);
+				pawn.needs.mood.thoughts.memories.TryGainMemory(ThoughtDefOf.Pussy_Healed, pawn, null);
 			}
-			if (num > 0)
-			{
-				MoteMaker.ThrowText(pawn.DrawPos, pawn.Map, "NumWoundsTended".Translate(num), 3.65f);
-			}
-			this.AfterSex(this.parent.pawn, pawn);
+			//this.AfterSex(any_wound_tended);
 			//FleckMaker.AttachedOverlay(pawn, FleckDefOf.FlashHollow, Vector3.zero, 1.5f, -1f);
 		}
 
@@ -67,8 +59,6 @@ namespace RJW_More_Genes
 			Pawn pawn = target.Pawn;
             if (pawn != null)
             {
-				
-
 				//to be replaced with severel checks to make it clear why target is unable to have sex
 				if (!CasualSex_Helper.CanHaveSex(pawn))
 				{
@@ -78,19 +68,36 @@ namespace RJW_More_Genes
 					}
 					return false;
 				}
-				Pawn parent = this.parent.pawn;
-				if (parent == null || !Genital_Helper.has_vagina(parent))
-				{
-					if (throwMessages && parent != null)
+				else if (pawn.IsAnimal() && !RJWSettings.bestiality_enabled)
+                {
+					if (throwMessages)
 					{
-						Messages.Message(parent.Name + " has no vagina to use", pawn, MessageTypeDefOf.RejectInput, false);
+						Messages.Message("bestiality is disabled", pawn, MessageTypeDefOf.RejectInput, false);
 					}
 					return false;
 				}
-				AbilityUtility.ValidateHasTendableWound(pawn, throwMessages, this.parent);
+				//AbilityUtility.ValidateHasTendableWound(pawn, throwMessages, this.parent);
 				
             }
             return base.Valid(target, throwMessages);
         }
+
+        public override bool GizmoDisabled(out string reason)
+        {
+			reason = null;
+			if (!Genital_Helper.has_vagina(this.parent.pawn))
+            {
+				reason = this.parent.pawn.Name + " has no vagina to use.";
+				return true;
+            }
+			else if (!RJWSettings.rape_enabled)
+            {
+				reason = "Rape is disabled";
+				return true;
+			}
+			return false;
+        }
+
+		
     }
 }

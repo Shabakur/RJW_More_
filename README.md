@@ -1,2 +1,10 @@
-# RJW_Genes_Addons
-Some code which can be copied into RJW genes if they want to, however a few names may need to be changed for it to work. Names, labels, descriptions and icons are just placeholders.
+# RJW_More_Genes
+Adds some more genes related to RJW to the game. 
+Current Genes
+- PussyHeal
+- Sexfrenzy
+
+Any suggestions and ideas are welcome.
+
+
+

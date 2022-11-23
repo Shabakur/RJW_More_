@@ -3,8 +3,8 @@
   <AbilityDef ParentName="AbilityTouchBase">
     <defName>PussyHeal</defName>
     <label>SexHeal</label>
-    <description>Use special vagina to quickly tend someone's wounds.</description>
-    <iconPath>UI/Icons/Genes/Gene_Coagulate</iconPath>
+    <description>Rape another pawn, so you can heal them with your vagina's special healing power.</description>
+    <iconPath>Things/Mote/Heart</iconPath>
     <stunTargetWhileCasting>false</stunTargetWhileCasting>
     <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
     <disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
@@ -20,7 +20,7 @@
       <range>-1</range>
       <warmupTime>0</warmupTime>
       <targetParams>
-        <canTargetAnimals>false</canTargetAnimals>
+        <canTargetAnimals>true</canTargetAnimals>
         <canTargetSelf>false</canTargetSelf>
         <canTargetBuildings>false</canTargetBuildings>
         <canTargetMechs>false</canTargetMechs>
@@ -30,9 +30,6 @@
     <comps>
       <li Class="RJW_More_Genes.CompProperties_AbilityPussyHeal"> <!-- namespace needs to be changed when copied to another mod-->
         <tendQualityRange>0.4~0.8</tendQualityRange> 
-      </li>
-      <li Class="CompProperties_AbilityRequiresCapacity">
-        <capacity>Manipulation</capacity>
       </li>
 	  <li Class="RJW_More_Genes.CompProperties_SexInteractionRequirements"> 
 		<tags>

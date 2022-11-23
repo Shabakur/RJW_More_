@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Verse;
 
+
 namespace RJW_More_Genes
 {
     public class GeneUtility
@@ -17,5 +18,7 @@ namespace RJW_More_Genes
             }
             return pawn.genes.HasGene(GeneDefOf.rjw_genes_pussyhealer);
         }
+
+        
     }
 }

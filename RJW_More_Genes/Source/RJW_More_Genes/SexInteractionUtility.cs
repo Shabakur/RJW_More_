@@ -17,25 +17,19 @@ namespace RJW_More_Genes
 {
     class SexInteractionUtility
     {
-        public static List<InteractionDef> GenerateDomVaginaInteractionDefList(Pawn pawn, Pawn pawn2)
-        {
-			List<InteractionDef> list2 = new List<InteractionDef>();
-			foreach (InteractionDef interactionDef in SexUtility.SexInterractions)
-			{
-				InteractionWithExtension withExtension = InteractionHelper.GetWithExtension(interactionDef);
-				if((withExtension.DominantHasTag(GenitalTag.CanBePenetrated) || withExtension.DominantHasFamily(GenitalFamily.Vagina)) 
-					&& LewdInteractionValidatorService.Instance.IsValid(interactionDef, pawn, pawn2))
-                {
-					//Log.Message(interactionDef.ToString());
-					list2.Add(interactionDef);
-                }
-			}
-			return list2;
-		}
-
 		public static List<InteractionDef> GenerateInteractionDefList(Pawn pawn, Pawn pawn2, CompProperties_SexInteractionRequirements sexpropsreq)
 		{
-			List<InteractionTag> tags = sexpropsreq.tags;
+			List<InteractionTag> tags = new List<InteractionTag>();
+			if (pawn2.IsAnimal())
+            {
+				tags.Add(InteractionTag.Animal);
+
+			}
+			else
+            {
+				tags = sexpropsreq.tags;
+			}
+			
 			InteractionRequirement dominantRequirement = sexpropsreq.dominantRequirement;
 			InteractionRequirement submissiveRequirement = sexpropsreq.submissiveRequirement;
 			List<InteractionDef> sexinteractions = SexUtility.SexInterractions;
@@ -121,35 +115,10 @@ namespace RJW_More_Genes
 		public static SexProps GenerateSexProps(Pawn pawn, Pawn pawn2, CompProperties_SexInteractionRequirements sexpropsreq)
         {
 			List<InteractionDef> interactionlist = GenerateInteractionDefList(pawn, pawn2, sexpropsreq);
-			if (interactionlist == null)
+			if (!interactionlist.Any())
 			{
 				return null;
 			}
-			//foreach(InteractionDef interaction in interactionlist)
-            //{
-			//	Log.Message(interaction.ToString());
-            //}
-			InteractionDef dictionaryKey = interactionlist.RandomElement();
-			bool rape = InteractionHelper.GetWithExtension(dictionaryKey).HasInteractionTag(InteractionTag.Rape);
-			SexProps sexProps = new SexProps();
-			sexProps.pawn = pawn;
-			sexProps.partner = pawn2;
-			sexProps.sexType = SexUtility.rjwSextypeGet(dictionaryKey);
-			sexProps.isRape = rape;
-			sexProps.isRapist = rape;
-			sexProps.canBeGuilty = false;
-			sexProps.dictionaryKey = dictionaryKey;
-			sexProps.rulePack = SexUtility.SexRulePackGet(dictionaryKey);
-			return sexProps;
-		}
-
-		public static SexProps GenerateSexpropsDomVagina(Pawn pawn, Pawn pawn2)
-        {
-			List<InteractionDef> interactionlist = GenerateDomVaginaInteractionDefList(pawn, pawn2);
-			if (interactionlist == null)
-            {
-				return null;
-            }
 			InteractionDef dictionaryKey = interactionlist.RandomElement();
 			bool rape = InteractionHelper.GetWithExtension(dictionaryKey).HasInteractionTag(InteractionTag.Rape);
 			SexProps sexProps = new SexProps();
