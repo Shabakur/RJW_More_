@@ -3,14 +3,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using RimWorld;
 using Verse;
+using RimWorld;
 
 namespace RJW_More_Genes
 {
     [DefOf]
-    public static class HediffDefOf
+    public static class GeneDefOf
     {
-        public static readonly HediffDef SexFrenzy;
+        [MayRequireBiotech]
+        public static readonly GeneDef rjw_genes_pussyhealer;
     }
 }

@@ -7,10 +7,10 @@
 	</supportedVersions>
 	<description>Adds additional more genes connected to RJW to the game</description>
 	<modDependencies>
-		<li>
+		<!-- <li>
 			<packageId>ludeon.rimworld.biotech</packageId>
 			<displayName>Biotech</displayName>
-		</li>
+		</li> -->
 		<li>
 			<packageId>rim.job.world</packageId>
 			<displayName>RimJobWorld</displayName>
@@ -24,8 +24,8 @@
 		</li>
 	</modDependencies>
 	<loadAfter>
-		<li>rim.job.world</li>
 		<li>brrainz.harmony</li>
-		<li>ludeon.rimworld.biotech</li>
+		<!-- <li>ludeon.rimworld.biotech</li> -->
+		<li>rim.job.world</li>
 	</loadAfter>
 </ModMetaData>

@@ -9,8 +9,9 @@ using RimWorld;
 namespace RJW_More_Genes
 {
     [DefOf]
-    public static class GeneDefOf
+    public static class ThoughtDefOf
     {
-        public static readonly GeneDef rjw_genes_pussyhealer;
+        [MayRequireBiotech]
+        public static readonly ThoughtDef Pussy_Healed;
     }
 }

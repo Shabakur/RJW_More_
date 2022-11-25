@@ -75,8 +75,7 @@ namespace RJW_More_Genes
                 }
 
 			}
-			IEnumerator<Pawn> enumerator = null;
-			yield break;
+			//IEnumerator<Pawn> enumerator = null;
 			yield break;
 		}
 		public override void DrawEffectPreview(LocalTargetInfo target)
