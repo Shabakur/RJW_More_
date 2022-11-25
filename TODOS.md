@@ -1,12 +1,12 @@
 Points with (improvements) behind them are already implemented, but I want to add improvements to them.
 
-Vanilla
+## Vanilla 
 Mindbreak lance (improvements)
 - Allow pawn to be moved while mindbreaking
 - Dont let combat interrupt mindbreak
 
 
-Biotech
+## Biotech 
 Healpussy (improvements)
 - Mood effect depends on relationship between pawns.
 
@@ -22,7 +22,7 @@ Vigorous gene
 Succubus like xenotype
 - combination of genes to make succubus like xenotype.
 
-Royalty
+## Royalty
 Add compatibility with vanilla expanded psypowers
 
 Sex frenzy psycast (improvements)
