@@ -95,6 +95,11 @@ namespace RJW_More_Genes
 				reason = "Rape is disabled";
 				return true;
 			}
+			else if (!RJWMGSettings.gene_pussyheal)
+			{
+				reason = "Disabled in modsettings";
+				return true;
+			}
 			return false;
         }
 

@@ -5,7 +5,6 @@ using System.Text;
 using System.Threading.Tasks;
 using HarmonyLib;
 using rjw;
-using RimWorld;
 using Verse;
 namespace RJW_More_Genes
 {
@@ -16,8 +15,11 @@ namespace RJW_More_Genes
         //[HarmonyPostfix]
         public static void Postfix(SexProps props)
         {
-            Log.Message("triggered");
-            AbilityUtility.PussyHeal(props);
+            if(RJWMGSettings.gene_pussyheal)
+            {
+                AbilityUtility.PussyHeal(props);
+                Log.Message("triggered");
+            }    
         }
     }
 }

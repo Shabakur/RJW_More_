@@ -36,7 +36,7 @@ namespace RJW_More_Genes
 
 			foreach (Pawn pawn in AffectedPawns(target,this.parent.pawn.Map))
             {
-				if(pawn == null || !xxx.can_rape(pawn, false)|| pawn.jobs.curJob.def.defName == "GettinRaped" || pawn.jobs.curJob.def.defName == "SexFrenzy")
+				if(pawn == null || !xxx.can_rape(pawn, false)|| pawn.jobs.curJob.def.defName == "GettinRaped" || pawn.jobs.curJob.def.defName == "RapeRandom")
                 {
 					continue;
                 }
@@ -51,7 +51,6 @@ namespace RJW_More_Genes
 				Job newJob = JobMaker.MakeJob(xxx.RapeRandom, pawn2);
 				pawn.jobs.StartJob(newJob, JobCondition.InterruptForced, null, false, true, null, null, false, false, null, false, true);
 			}
-			Log.Message("test");
 		}
 
         public override bool GizmoDisabled(out string reason)
@@ -60,6 +59,11 @@ namespace RJW_More_Genes
 			if (!RJWSettings.rape_enabled)
             {
 				reason = "Rape is disabled";
+				return true;
+			}
+			else if (!RJWMGSettings.sexfrenzy)
+			{
+				reason = "Disabled in modsettings";
 				return true;
 			}
 			return false;

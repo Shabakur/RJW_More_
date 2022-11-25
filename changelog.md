@@ -10,3 +10,6 @@ V1.0.6
 - Added checks for RJWsettings and if the pawn has a vagina.
 V1.0.7
 - Removed Dependency on biotech, Mod will "function" without biotech enabled, but has no non-biotech required content currently.
+V1.1.0
+- Added mindbreak lance
+- Changed sexfrenzy from a gene to a psycast

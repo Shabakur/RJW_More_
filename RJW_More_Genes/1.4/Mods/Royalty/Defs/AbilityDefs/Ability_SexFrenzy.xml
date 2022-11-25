@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-  <AbilityDef>
+  <AbilityDef ParentName="PsycastBaseSkip">
     <defName>SexFrenzy</defName>
     <label>SexFrenzy</label>
     <description>Causes nearby pawns to go into a sex frenzy, trying to rape anyone if they can.</description>

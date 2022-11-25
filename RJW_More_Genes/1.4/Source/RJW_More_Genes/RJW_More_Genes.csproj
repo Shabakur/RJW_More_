@@ -35,6 +35,9 @@
       <HintPath>..\..\..\..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Shaba_Addons\Assemblies\0Harmony.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="0MultiplayerAPI">
+      <HintPath>..\..\..\..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\RJW\1.4\Assemblies\0MultiplayerAPI.dll</HintPath>
+    </Reference>
     <Reference Include="Assembly-CSharp">
       <HintPath>..\..\..\..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\Assembly-CSharp.dll</HintPath>
       <Private>False</Private>
@@ -64,14 +67,19 @@
     <Compile Include="CompProperties_SexFrenzy.cs" />
     <Compile Include="CompProperties_AbilityPussyHeal.cs" />
     <Compile Include="CompProperties_SexInteractionRequirements.cs" />
+    <Compile Include="CompTargetEffect_PsychicMindbreak.cs" />
     <Compile Include="GeneDefOf.cs" />
     <Compile Include="HarmonyInit.cs" />
     <Compile Include="HediffDefOf.cs" />
+    <Compile Include="JobDefOf.cs" />
     <Compile Include="JobDriver_CastAbilityAfterSex.cs" />
+    <Compile Include="JobDriver_Mindbreak.cs" />
     <Compile Include="MentalStateDefOf.cs" />
     <Compile Include="PatchProcessSex.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="GeneUtility.cs" />
+    <Compile Include="RJWMGSettingController.cs" />
+    <Compile Include="RJWMGSettings.cs" />
     <Compile Include="SexInteractionUtility.cs" />
     <Compile Include="ThoughtDefOf.cs" />
   </ItemGroup>

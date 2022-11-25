@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <ThingDef ParentName="ApparelNoQualityBase">
+    <defName>Apparel_PsychicMindbreakLance</defName>
+    <label>psychic Mindbreak lance</label>
+    <description>A limited-use psychic effector. It creates false images and sensations with the goal of bringing continues orgasms until the pawn becomes a masochist. Some strongwilled or lucky pawns pass the ordeal without being fully broken.</description>
+    <graphicData>
+      <texPath>Things/Item/Artifact/PsychicShockLance</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <techLevel>Archotech</techLevel>
+    <tradeTags>
+      <li>Artifact</li>
+    </tradeTags>
+    <thingSetMakerTags>
+      <li>RewardStandardHighFreq</li>
+    </thingSetMakerTags>
+    <statBases>
+      <Mass>0.5</Mass>
+      <EquipDelay>2</EquipDelay>
+      <MarketValue>550</MarketValue>
+      <MaxHitPoints>80</MaxHitPoints>
+    </statBases>
+    <tickerType>Normal</tickerType>
+    <thingCategories>
+      <li>ApparelUtility</li>
+    </thingCategories>
+    <apparel>
+      <countsAsClothingForNudity>false</countsAsClothingForNudity>
+      <scoreOffset>4</scoreOffset>
+      <careIfWornByCorpse>false</careIfWornByCorpse>
+      <careIfDamaged>false</careIfDamaged>
+      <ignoredByNonViolent>true</ignoredByNonViolent>
+      <wearPerDay>0</wearPerDay>
+      <bodyPartGroups>
+        <li>Waist</li>
+      </bodyPartGroups>
+      <layers>
+        <li>Belt</li>
+      </layers>
+    </apparel>
+    <resourceReadoutPriority>Middle</resourceReadoutPriority>
+    <tradeNeverStack>true</tradeNeverStack>
+    <smeltable>false</smeltable>
+    <burnableByRecipe>false</burnableByRecipe>
+    <drawGUIOverlay>false</drawGUIOverlay>
+    <relicChance>3</relicChance>
+    <verbs>
+      <li>
+        <verbClass>Verb_CastTargetEffectLances</verbClass>
+        <label>psychic mindbreak lance</label>
+        <hasStandardCommand>true</hasStandardCommand>
+        <targetable>true</targetable>
+        <onlyManualCast>True</onlyManualCast>
+        <range>34.9</range>
+        <warmupTime>0.5</warmupTime>
+        <invalidTargetPawn>Psychic mindbreak immune</invalidTargetPawn>
+        <targetParams>
+          <canTargetBuildings>false</canTargetBuildings>
+		  <canTargetAnimals>false</canTargetAnimals>
+		  <canTargetMechs>false</canTargetMechs>
+          <onlyTargetPsychicSensitive>true</onlyTargetPsychicSensitive>
+          <neverTargetIncapacitated>false</neverTargetIncapacitated>
+        </targetParams>
+        <soundCast>PsychicShockLanceCast</soundCast>
+      </li>
+    </verbs>
+    <comps>
+      <li Class="CompProperties_Reloadable">
+        <maxCharges>2</maxCharges>
+        <destroyOnEmpty>true</destroyOnEmpty>
+        <hotKey>Misc4</hotKey>
+        <chargeNoun>charge</chargeNoun>
+        <displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+      </li>
+      <li>
+        <compClass>RJW_More_Genes.CompTargetEffect_PsychicMindbreak</compClass>
+      </li>
+      <li Class="CompProperties_TargetEffect_GoodwillImpact">
+        <goodwillImpact>-200</goodwillImpact>
+      </li>
+      <li Class="CompProperties_TargetEffect_FleckOnTarget">
+        <fleckDef>PsycastPsychicEffect</fleckDef>
+      </li>
+      <li Class="CompProperties_TargetEffect_FleckConnecting">
+        <fleckDef>PsycastPsychicLine</fleckDef>
+      </li>
+      <li Class="CompProperties_Styleable"></li>
+    </comps>
+    <allowedArchonexusCount>1</allowedArchonexusCount>
+  </ThingDef>
+
+
+</Defs>

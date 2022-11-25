@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+	<JobDef>
+		<defName>Mindbreak</defName>
+		<driverClass>RJW_More_Genes.JobDriver_Mindbreak</driverClass>
+		<reportString>forced masturbatin'.</reportString>
+		<casualInterruptible>false</casualInterruptible>
+	</JobDef>
+</Defs>

@@ -23,7 +23,7 @@
       </suffixSymbols>
     </symbolPack>
   </GeneDef>
-
+<!--
   <GeneDef>
     <defName>rjw_genes_sexfrenzy</defName>
     <label>Sex Frenzy</label>
@@ -47,4 +47,5 @@
       </suffixSymbols>
     </symbolPack>
   </GeneDef>
+ -->
 </Defs>
