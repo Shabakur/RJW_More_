@@ -1,4 +1,4 @@
-Points with (improvements) behind them are things already implemented, but things where I want to add improvements.
+Points with (improvements) behind them are already implemented, but I want to add improvements to them.
 
 Vanilla
 Mindbreak lance (improvements)
@@ -9,7 +9,6 @@ Mindbreak lance (improvements)
 Biotech
 Healpussy (improvements)
 - Mood effect depends on relationship between pawns.
-- Add sex interaction to have a female, female animal vaginal interaction, animal scissoring?
 
 Aphrodisiac gene
 - Increases sexdrive of pawns around pawn 
