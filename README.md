@@ -1,5 +1,5 @@
 # RJW_More_
-Adds some more features related to RJW to the game. Mod is WIP, will be adding more features in the future and current features may be changed or removed. 
+Adds some more features related to RJW to the game. Mod is WIP, I will be adding more features in the future and current features may be changed or removed. 
 
 ## Current features
 - Pussyheal gene
