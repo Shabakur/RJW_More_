@@ -18,17 +18,9 @@ namespace RJW_More_Genes
             return true;
         }
 
-		[SyncMethod(SyncContext.None)]
-		public void rapid_orgasms()
-        {	
-			this.ticks_left = this.duration;
-			this.cycle++;
-		}
 		protected override IEnumerable<Toil> MakeNewToils()
         {
             this.setup_ticks();
-			//this.duration = (int)(100 * Rand.Range(1.5f, 2.5f));
-			//this.rapid_orgasms();
 			Toil toil2 = Toils_General.Wait(this.max_duration, TargetIndex.None);
 			toil2.handlingFacing = true;
 			toil2.initAction = delegate ()
@@ -46,7 +38,7 @@ namespace RJW_More_Genes
 				SexUtility.reduce_rest(this.pawn, 1f);
 				if (this.ticks_left <= 0)
 				{
-					Log.Message("cycle " + this.cycle);
+					Log.Message("cycle " + this.cycles);
 					if ((this.pawn.story.traits.HasTrait(TraitDefOf.Masochist)))
                     {
 						base.ReadyForNextToil();
@@ -55,7 +47,8 @@ namespace RJW_More_Genes
                     {
 						this.ticks_left = this.duration;
 						AfterSexUtility.processBrokenPawn(this.pawn);
-                    }
+						AfterSexUtility.processBrokenPawn(this.pawn);
+					}
 				}
 			};
 			toil2.AddFinishAction(delegate
@@ -75,7 +68,7 @@ namespace RJW_More_Genes
 		}
 
 		public int max_duration = 60000;
-		public int cycle = 0;
+		public int cycles = 1;
 		public int min_cycles = 5;
     }
 }

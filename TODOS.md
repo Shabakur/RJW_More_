@@ -7,9 +7,6 @@ Mindbreak lance (improvements)
 
 
 ## Biotech 
-Healpussy (improvements)
-- Mood effect depends on relationship between pawns.
-
 Aphrodisiac gene
 - Increases sexdrive of pawns around pawn 
 
@@ -19,21 +16,11 @@ Cumabsorber gene
 Vigorous gene
 - Gain rest after sex
 
-Succubus like xenotype
-- combination of genes to make succubus like xenotype.
+Sexbot
+- Buildable mechanoids which are great at sex.
 
 ## Royalty
 Add compatibility with vanilla expanded psypowers
-
-Sex frenzy psycast (improvements)
-- Add Special Mind break, Run around colony and cause other pawns to go into random rape.
-- Allow it to effect drafted pawns and allow drafted pawns to be raped.
-
-Orgasm psypower 
-- Force a pawn to orgasm, count as a short stun
-
-Orgasm Cycle psypower 
-- Force a pawn to several orgasm over x time, each orgasm works as a short stun
 
 Fertility psypower 
 - Increase a pawns fertility for some time
@@ -41,5 +28,8 @@ Fertility psypower
 Sexdrive psypower
 - Increase the sexdrive of a pawn for some time.
 
- Psypenis psypower
- - Temporary give a pawn a penis (fertile?)
+Psypenis psypower
+- Temporary give a pawn a penis (fertile?)
+
+Gangbang psypower
+- Down target and have pawns around them rape them.

@@ -5,6 +5,8 @@ VisualStudioVersion = 17.2.32519.379
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RJW_More_Genes", "RJW_More_Genes.csproj", "{3D62BDB2-ED7B-481B-B00B-0B634D99EC8D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RJWM_VPE", "..\RJWM_VPE\RJWM_VPE.csproj", "{7B1F5DB6-FC35-4F63-BB11-3225A9DD0FE7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{3D62BDB2-ED7B-481B-B00B-0B634D99EC8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3D62BDB2-ED7B-481B-B00B-0B634D99EC8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3D62BDB2-ED7B-481B-B00B-0B634D99EC8D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B1F5DB6-FC35-4F63-BB11-3225A9DD0FE7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B1F5DB6-FC35-4F63-BB11-3225A9DD0FE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B1F5DB6-FC35-4F63-BB11-3225A9DD0FE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B1F5DB6-FC35-4F63-BB11-3225A9DD0FE7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

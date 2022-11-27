@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <AbilityDef ParentName="PsycastBaseSkip">
+    <defName>OrgasmCycle</defName>
+    <label>MultiOrgasm</label>
+    <description>Force the target to have multiple orgasms over time, each one stunning them shortly.</description>
+    <iconPath>Things/Mote/Heart</iconPath>
+    <displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+    <disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
+    <warmupStartSound>Coagulate_Cast</warmupStartSound>
+    <displayOrder>404</displayOrder>
+	<statBases>
+      <Ability_EntropyGain>18</Ability_EntropyGain>
+      <Ability_PsyfocusCost>0.05</Ability_PsyfocusCost>
+	  <Ability_Duration>45</Ability_Duration>
+    </statBases>
+	<verbProperties>
+		<verbClass>Verb_CastAbility</verbClass>
+		<warmupTime>1</warmupTime>
+		<range>24.9</range>
+		<targetParams>
+			<canTargetSelf>True</canTargetSelf>
+			<canTargetAnimals>false</canTargetAnimals>
+			<canTargetLocations>false</canTargetLocations>
+			<canTargetBuildings>false</canTargetBuildings>
+			<canTargetMechs>false</canTargetMechs>
+        </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class = "CompProperties_AbilityGiveHediff">
+        <compClass>CompAbilityEffect_GiveHediff</compClass>
+        <hediffDef>OrgasmCycle</hediffDef>
+        <durationMultiplier>PsychicSensitivity</durationMultiplier>
+        <psychic>True</psychic>
+        <goodwillImpact>-15</goodwillImpact>
+        <applyGoodwillImpactToLodgers>False</applyGoodwillImpactToLodgers>
+      </li>
+	  <li Class="CompProperties_AbilityFleckOnTarget">
+        <fleckDef>Heart</fleckDef>
+      </li>
+    </comps>
+  </AbilityDef>
+</Defs>

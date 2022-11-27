@@ -1,10 +1,12 @@
 # RJW_More_
-Adds some more features related to RJW to the game. 
+Adds some more features related to RJW to the game. Mod is WIP, will be adding more features in the future and current features may be changed or removed. 
 
 ## Current features
-- PussyHeal gene
-- Sexfrenzy Psypower
-- Mindbreak Lance
+- Pussyheal gene
+- Sexfrenzy psypower
+- Orgasm psypower
+- MultiOrgasm psypower
+- Mindbreak lance
 
 
 Any suggestions and ideas are welcome. See [my current ideas](TODOS.md) for what I have already written down. 

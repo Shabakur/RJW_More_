@@ -7,6 +7,7 @@ using Verse;
 using RimWorld;
 using rjw;
 using Verse.AI;
+
 namespace RJW_More_Genes
 {
     public class CompTargetEffect_PsychicMindbreak : CompTargetEffect

@@ -7,13 +7,16 @@
     <iconPath>Things/Mote/Heart</iconPath>
     <displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
     <disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
-	<cooldownTicksRange>180000</cooldownTicksRange>
+	<statBases>
+      <Ability_EntropyGain>30</Ability_EntropyGain>
+      <Ability_PsyfocusCost>0.15</Ability_PsyfocusCost>
+    </statBases>
     <warmupStartSound>Coagulate_Cast</warmupStartSound>
     <displayOrder>402</displayOrder>
 	<verbProperties>
 		<verbClass>Verb_CastAbility</verbClass>
 		<warmupTime>1</warmupTime>
-		<range>7.9</range>
+		<range>14.9</range>
 		<targetParams>
 			<canTargetSelf>True</canTargetSelf>
 			<canTargetAnimals>True</canTargetAnimals>

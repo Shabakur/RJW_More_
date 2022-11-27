@@ -1,0 +1,4 @@
+C:\Users\tyrob\OneDrive\Documenten\GitHub\RJW_More_Genes\RJW_More_Genes\1.4\Source\RJWM_VPE\obj\Debug\RJWM_VPE.csproj.AssemblyReference.cache
+C:\Users\tyrob\OneDrive\Documenten\GitHub\RJW_More_Genes\RJW_More_Genes\1.4\Source\RJWM_VPE\obj\Debug\RJWM_VPE.csproj.CoreCompileInputs.cache
+C:\Users\tyrob\OneDrive\Documenten\GitHub\RJW_More_Genes\RJW_More_Genes\1.4\Mods\PsycastExpanded\Assemblies\RJWMoreGenes_VPE.dll
+C:\Users\tyrob\OneDrive\Documenten\GitHub\RJW_More_Genes\RJW_More_Genes\1.4\Source\RJWM_VPE\obj\Debug\RJWMoreGenes_VPE.dll

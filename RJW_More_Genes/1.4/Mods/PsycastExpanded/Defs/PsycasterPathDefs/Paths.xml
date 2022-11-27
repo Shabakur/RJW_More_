@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+    <VanillaPsycastsExpanded.PsycasterPathDef>
+        <defName>RJW_M_Nymph</defName>
+        <label>Nymph</label>
+        <description>Nymph psycasts are focused on instigating sex, one way or another.</description>
+        <background>UI/Backgrounds/EmpathPath</background>
+        <altBackground>UI/AlternativeBackgrounds/PathBG_Empath</altBackground>
+        <tab>Psycasts</tab>
+        <tooltip>Nymps are psycasters known to bring sex to their comminuties. Known to arouse with but a few words, particularly powerful nymps can create great orgies.</tooltip>
+    </VanillaPsycastsExpanded.PsycasterPathDef>
+</Defs>

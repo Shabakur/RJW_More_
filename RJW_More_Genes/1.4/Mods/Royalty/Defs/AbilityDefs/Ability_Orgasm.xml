@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <AbilityDef ParentName="PsycastBaseSkip">
+    <defName>Orgasm</defName>
+    <label>Orgasm</label>
+    <description>Force the target to have an orgasm, stunning them for a short period.</description>
+    <iconPath>Things/Mote/Heart</iconPath>
+    <displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+    <disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
+    <warmupStartSound>Coagulate_Cast</warmupStartSound>
+    <displayOrder>403</displayOrder>
+	<statBases>
+      <Ability_EntropyGain>12</Ability_EntropyGain>
+      <Ability_PsyfocusCost>0.01</Ability_PsyfocusCost>
+      <Ability_Duration>3</Ability_Duration>
+    </statBases>
+	<verbProperties>
+		<verbClass>Verb_CastAbility</verbClass>
+		<warmupTime>1</warmupTime>
+		<range>24.9</range>
+		<targetParams>
+			<canTargetSelf>True</canTargetSelf>
+			<canTargetAnimals>false</canTargetAnimals>
+			<canTargetLocations>false</canTargetLocations>
+			<canTargetBuildings>false</canTargetBuildings>
+			<canTargetMechs>false</canTargetMechs>
+        </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="RJW_More_Genes.CompProperties_AbilityOrgasm"> <!-- namespace needs to be changed when copied to another mod-->
+      </li>
+	  <li Class="CompProperties_AbilityFleckOnTarget">
+        <fleckDef>Heart</fleckDef>
+      </li>
+    </comps>
+  </AbilityDef>
+</Defs>

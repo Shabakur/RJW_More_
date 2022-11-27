@@ -4,11 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Verse;
-using UnityEngine;
 using RimWorld;
 using rjw;
 using Verse.AI;
-using rjw.Modules.Interactions.Helpers;
 
 namespace RJW_More_Genes
 {
@@ -28,15 +26,13 @@ namespace RJW_More_Genes
             {
 				if (pawn != null)
                 {
-					Need_Sex needsex = pawn.needs.TryGetNeed<Need_Sex>();
-					needsex.CurLevel = 0f;
 					pawn.health.AddHediff(HediffDefOf.SexFrenzy);
                 }
             }
 
 			foreach (Pawn pawn in AffectedPawns(target,this.parent.pawn.Map))
             {
-				if(pawn == null || !xxx.can_rape(pawn, false)|| pawn.jobs.curJob.def.defName == "GettinRaped" || pawn.jobs.curJob.def.defName == "RapeRandom")
+				if(pawn == null || !xxx.can_rape(pawn, true)|| pawn.jobs.curJob.def.defName == "GettinRaped" || pawn.jobs.curJob.def.defName == "RapeRandom")
                 {
 					continue;
                 }

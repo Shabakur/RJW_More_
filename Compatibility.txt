@@ -1,2 +1,1 @@
-Vanilla Psycast Expanded
-- Disables psycasts
+I'm currently unaware of any uncompatibilities.

@@ -13,3 +13,8 @@ V1.0.7
 V1.1.0
 - Added mindbreak lance
 - Changed sexfrenzy from a gene to a psycast
+V1.1.1
+- Fixed error when sexfrenzy hit an animal
+- Add orgasm psypower
+- Add multiorgasm psypower
+- Made all current psypowers compatible with vanilla psycast expanded
