@@ -6,18 +6,6 @@ Mindbreak lance (improvements)
 - Dont let combat interrupt mindbreak
 
 
-## Biotech 
-Aphrodisiac gene
-- Increases sexdrive of pawns around pawn 
-
-Cumabsorber gene
-- Gain benefits after cum enters any orfice, rest? combat? work?
-
-Vigorous gene
-- Gain rest after sex
-
-Sexbot
-- Buildable mechanoids which are great at sex.
 
 ## Royalty
 Add compatibility with vanilla expanded psypowers
