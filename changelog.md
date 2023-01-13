@@ -18,3 +18,7 @@ V1.1.1
 - Add orgasm psypower
 - Add multiorgasm psypower
 - Made all current psypowers compatible with vanilla psycast expanded
+V1.1.2
+- Pawns affected by sexfrenzy only rape pawns who they are attracted to.
+- Removed healpussy cooldown
+- Fixed Mindbreak Lance
