@@ -7,4 +7,11 @@
 		<reportString>forced masturbatin'.</reportString>
 		<casualInterruptible>false</casualInterruptible>
 	</JobDef>
+	
+	<JobDef>
+		<defName>MiscSexReciever</defName>
+		<driverClass>RJW_More_Genes.JobDriver_MiscSexBaseReciever</driverClass>
+		<reportString>lovin'.</reportString>
+		<casualInterruptible>false</casualInterruptible>
+	</JobDef>
 </Defs>

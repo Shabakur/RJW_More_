@@ -12,5 +12,7 @@ namespace RJW_More_Genes
     public static class JobDefOf
     {
         public static readonly JobDef Mindbreak;
+        public static readonly JobDef MiscSexReciever;
+        public static readonly JobDef HealPussy;
     }
 }

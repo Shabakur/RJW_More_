@@ -19,7 +19,11 @@ namespace RJW_More_Genes
             //this.FailOnCannotTouch(TargetIndex.B, PathEndMode.OnCell);
             this.FailOnDespawnedNullOrForbidden(this.iTarget);
             //this.FailOn(() => !target.health.capacities.CanBeAwake);
-            JobDef PartnerJob = xxx.gettin_raped;
+            JobDef PartnerJob = xxx.getting_quickie;
+			if(RJWMGSettings.consensual_pussyheal)
+            {
+				PartnerJob = JobDefOf.MiscSexReciever;
+            }
 			yield return Toils_Goto.Goto(TargetIndex.A, PathEndMode.OnCell);
             yield return new Toil
             {
@@ -46,6 +50,11 @@ namespace RJW_More_Genes
 					if (comp.props is CompProperties_SexInteractionRequirements)
                     {
 						CompProperties_SexInteractionRequirements sexpropsreq = comp.props as CompProperties_SexInteractionRequirements;
+						if (RJWMGSettings.gene_pussyheal)
+                        {
+							sexpropsreq.tags.Clear();
+							sexpropsreq.tags.Add(rjw.Modules.Interactions.Enums.InteractionTag.Consensual);
+                        }
 						this.Sexprops = SexInteractionUtility.GenerateSexProps(this.pawn, this.Partner, sexpropsreq);						
                     }
 				}	

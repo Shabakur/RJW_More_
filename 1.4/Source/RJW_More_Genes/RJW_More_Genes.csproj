@@ -69,6 +69,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="JobDriver_CastAbilityAfterSex.cs" />
     <Compile Include="Royalty\AbilityUtility.cs" />
     <Compile Include="Royalty\CompAbilityEffect_Orgasm.cs" />
     <Compile Include="Royalty\CompAbilityEffect_SexFrenzy.cs" />
@@ -85,7 +86,7 @@
     <Compile Include="Royalty\HediffComp_OrgasmCycle.cs" />
     <Compile Include="HediffDefOf.cs" />
     <Compile Include="JobDefOf.cs" />
-    <Compile Include="JobDriver_CastAbilityAfterSex.cs" />
+    <Compile Include="JobDriver_MiscSexBaseReciever.cs" />
     <Compile Include="JobDriver_Mindbreak.cs" />
     <Compile Include="MentalStateDefOf.cs" />
     <Compile Include="PatchProcessSex.cs" />
