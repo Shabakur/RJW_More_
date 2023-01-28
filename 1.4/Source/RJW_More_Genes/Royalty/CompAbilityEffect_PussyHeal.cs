@@ -90,7 +90,7 @@ namespace RJW_More_Genes
 				reason = this.parent.pawn.Name + " has no vagina to use.";
 				return true;
             }
-			else if (!RJWSettings.rape_enabled)
+			else if (!RJWSettings.rape_enabled && !RJWMGSettings.consensual_pussyheal)
             {
 				reason = "Rape is disabled";
 				return true;

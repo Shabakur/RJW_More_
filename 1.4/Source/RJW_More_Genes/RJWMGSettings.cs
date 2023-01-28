@@ -22,7 +22,7 @@ namespace RJW_More_Genes
             listing_Standard.Gap(24f);
             listing_Standard.CheckboxLabeled("gene pussyheal", ref gene_pussyheal, "disable the effects of the gene", 0f, 1f);
             listing_Standard.Gap(3f);
-            listing_Standard.CheckboxLabeled("sexfrenzy", ref sexfrenzy, "disable the effects", 0f, 1f);
+            listing_Standard.CheckboxLabeled("sexfrenzy", ref sexfrenzy, "disable the effects of the gene", 0f, 1f);
             listing_Standard.Gap(3f);
             listing_Standard.CheckboxLabeled("consensual_pussyheal", ref consensual_pussyheal, "pussyheal counts as consensual sex instead of rape", 0f, 1f);
             listing_Standard.End();
